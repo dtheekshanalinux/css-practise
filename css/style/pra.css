@@ -1,29 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-body{
+.our-content{
     font-family: 'Raleway', sans-serif;
+	font-weight: 900;
     max-width: 500px;
     margin:auto;
+	line-height: 2.5em;
+	padding-top: 20px;
+
+}
+body{
+	background-image: url("../images/tic-tac-toe.png");
+	padding-bottom: 50px;
+}
+.nav{
+	padding-top: 2opx;
+}
+.bold{
+	font-weight: bold;
 }
 h1{
-    color: rgb(117, 209, 41);
-}
-h1 a {color: brown;
-}
-h2 :hover{
-    color: orange;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	max-width: 600px;
+    margin:auto;
+	padding-top: 20px;
 }
 .handstand:hover{
     box-shadow: 5px 8px 34px 0px orange;
 }
-.hda{
-    box-shadow: 5px 8px rgb(95, 9, 9);
+button:hover{
+	background-color: #007bff;
 }
-.hda2{
-    box-shadow: 5px 8px black
-}
-ul li:hover{
-    color: orange;
-}
-ul li a{
-    text-decoration: none;
-}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: black;
+  }
+  .active {
+	background-color:orange;
+  }
