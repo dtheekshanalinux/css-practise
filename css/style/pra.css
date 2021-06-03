@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/*body content*/
 .our-content{
     font-family: 'Raleway', sans-serif;
 	font-weight: 900;
@@ -6,7 +7,6 @@
     margin:auto;
 	line-height: 2.5em;
 	padding-top: 20px;
-
 }
 body{
 	background-image: url("../images/tic-tac-toe.png");
@@ -26,36 +26,52 @@ h1{
     margin:auto;
 	padding-top: 20px;
 }
-.handstand:hover{
-    box-shadow: 5px 8px 34px 0px orange;
-}
+/*booststrap button*/
 button:hover{
 	background-color: #007bff;
 }
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+/*imaage*/
+.handstand:hover{
+opacity: 0.8;}
+img{
+	width:100%;
+}
+  @media only screen and (max-width: 480px) {
+	img {
+	  width: 100%;
+	}
+	/*navigation bar*/
+  }
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+  #navbar {
 	overflow: hidden;
 	background-color: #333;
   }
   
-  li {
+  #navbar a {
 	float: left;
-  }
-  
-  li a {
 	display: block;
-	color: white;
+	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 17px;
   }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-	background-color: black;
+  #navbar a:hover {
+	background-color: #ddd;
+	color: black;
   }
-  .active {
-	background-color:orange;
+  
+  #navbar a.active {
+	background-color: orange;
+	color: white;
   }
